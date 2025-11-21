@@ -1,0 +1,5 @@
+{
+  "name": "SEO Intent Classifier",
+  "description": "A smart tool that classifies keyword lists into Product, Collection, or Article intent using Gemini AI for SEO strategy optimization.",
+  "requestFramePermissions": []
+}
