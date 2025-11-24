@@ -1,3 +1,4 @@
+
 import { IntentType } from './types';
 
 export const INTENT_COLORS = {
@@ -7,7 +8,7 @@ export const INTENT_COLORS = {
   [IntentType.UNKNOWN]: '#9ca3af', // Gray
 };
 
-// Sample data based on the user's screenshot to allow quick testing
+// Sample data 
 export const SAMPLE_INPUT_TEXT = `Artificial flowers	14800
 fake flowers	18100
 faux flowers	6600

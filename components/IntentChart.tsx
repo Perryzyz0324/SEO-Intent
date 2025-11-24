@@ -1,3 +1,4 @@
+
 import React, { useMemo } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import { AnalysisResult, IntentType } from '../types';
@@ -37,7 +38,7 @@ export const IntentChart: React.FC<IntentChartProps> = ({ results }) => {
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 h-96 flex flex-col">
-      <h3 className="text-lg font-semibold text-gray-800 mb-4">Intent Distribution</h3>
+      <h3 className="text-lg font-semibold text-gray-800 mb-4">页面意图分布</h3>
       <div className="flex-1 w-full">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
@@ -56,7 +57,7 @@ export const IntentChart: React.FC<IntentChartProps> = ({ results }) => {
             </Pie>
             <Tooltip 
               contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-              formatter={(value: number) => [`${value} Keywords`, 'Count']}
+              formatter={(value: number) => [`${value} 个关键词`, '数量']}
             />
             <Legend verticalAlign="bottom" height={36}/>
           </PieChart>
